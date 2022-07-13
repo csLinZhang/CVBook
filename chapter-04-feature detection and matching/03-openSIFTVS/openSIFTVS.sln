@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1972
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openSIFTVS", "openSIFTVS\openSIFTVS.vcxproj", "{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Debug|x64.ActiveCfg = Debug|x64
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Debug|x64.Build.0 = Debug|x64
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Debug|x86.Build.0 = Debug|Win32
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Release|x64.ActiveCfg = Release|x64
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Release|x64.Build.0 = Release|x64
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Release|x86.ActiveCfg = Release|Win32
+		{C5F4D2DA-84FD-4F5F-AAFA-223355F4344D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F27136CC-D2FB-4D48-8253-6F7F1711681D}
+	EndGlobalSection
+EndGlobal
