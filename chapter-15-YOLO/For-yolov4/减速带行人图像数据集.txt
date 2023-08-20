@@ -1,0 +1,15 @@
+教材中提到的减速带与行人图像数据集，以及训练yolov4所需的配置文件train.txt、val.txt、obj.names和speedbump-person.data
+下载后，该文件夹要放在darknet.exe所在目录之下，即文件目录结构为：
+--darknet.exe
+--mydata（文件夹）
+----backup（文件夹）
+----img（文件夹）
+----train.txt
+----val.txt
+----obj.names
+----speedbump-person.data
+
+
+链接：https://pan.baidu.com/s/1caaXJcXSyBT8Ovonb_hK3g?pwd=6yyl 
+提取码：6yyl 
+--来自百度网盘超级会员V7的分享
