@@ -1,0 +1,15 @@
+给数据集的内容本质上与训练Yolov4模型的数据集相同。只不过为了适合ultralytics程序框架的需要，对目录结构进行了重新组织。
+下载后，该文件夹要放在\ultralytics-main\目录之下，即文件目录结构为：
+--ultralytics-main
+----mydata（文件夹）
+------images（文件夹）
+------labels（文件夹）
+------train.txt
+------val.txt
+------speedbump-person.yaml
+
+另外需要注意，train.txt与val.txt中存放的图片文件的绝对路径，读者需要根据自己工作站的情况进行修改。
+
+链接：https://pan.baidu.com/s/1sWbVBYBrYMrQtu5huvVRoA?pwd=ewot 
+提取码：ewot 
+--来自百度网盘超级会员V7的分享
