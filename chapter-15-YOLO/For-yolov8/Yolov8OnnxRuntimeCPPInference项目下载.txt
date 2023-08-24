@@ -1,0 +1,5 @@
+Yolov8OnnxRuntimeCPPInference项目，示范了如何基于导出的YOLOv8模型文件，在VS2017+OpenCV+CUDA+ONNX运行时环境下，进行推理。
+
+链接：https://pan.baidu.com/s/1kWtFAMvqJMpFnOKp97AnuA?pwd=btiw 
+提取码：btiw 
+--来自百度网盘超级会员V7的分享
