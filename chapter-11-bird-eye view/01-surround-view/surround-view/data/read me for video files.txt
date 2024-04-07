@@ -1,3 +1,0 @@
-由于github文件大小的限制，四路原始鱼眼视频文件f.avi, l.avi, b.avi, r.avi被放在了百度云盘上，请下载解压后放到该data文件夹下。下载地址为：
-链接：https://pan.baidu.com/s/1j4hYF8w8T21d77DHiU3DvA?pwd=bp8p 
-提取码：bp8p 
