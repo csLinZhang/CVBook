@@ -20,7 +20,7 @@ function [ind_new,ind_1,ind_2,ind_3,ind_4,a1,a2,a3,a4] = rect_index(I,R,f,c,k,KK
 px = reshape(mx',nc*nr,1);
 py = reshape(my',nc*nr,1);
 %[(px - 1)';(py - 1)';ones(1,length(px))]，
-%是校正化左目图像上像素位置的归一化齐次坐标
+%是校正化左目图像上像素位置的规范化齐次坐标
 %rays，每个像素点所对应的Camrect-l归一化成像平面上点的齐次坐标
 %也是这些点在Crect-l坐标系下的三维坐标
 %dim(rays)= 3*307200

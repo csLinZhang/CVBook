@@ -28,13 +28,12 @@ while (change > 1e-11)&&(iter <= MaxIter)
     e = []; %误差项
 
     %param, 优化变量
-    %(om,T)，双目系统外参，其初始值已经在load_stereo_calib_files步骤中初始化好，是由拍摄每组双目图像时
-    %左右相机世界外参估算出的双目参数的中值
+    %(om,T)，双目系统外参，其初始值已经在load_stereo_calib_files步骤中初始化好
     param = [om;T];
 
     for kk = 1:n_ima %n_ima是双目图像对的个数，在本例中为14
         %Xckk，标定板所确定的世界坐标系下，标定板交叉点的世界坐标，dim(Xckk)= 3*54
-        %(omckk,Tckk)，拍摄第kk组双目图像时，左相机相对于世界坐标系的外参，即轴角向量和平移向量
+        %(omckk,Tckk)，拍摄第kk组双目图像时，左相机相对于世界坐标系的外参
         %xlkk，标定板三维交叉点所对应的左图像上的像素点坐标，dim(xlkk)= 2*54
         eval(['Xckk = X_left_' num2str(kk) ';']);
         eval(['omckk = omc_left_' num2str(kk) ';']);
@@ -117,13 +116,13 @@ while (change > 1e-11)&&(iter <= MaxIter)
     %完成本轮优化变量更新
     param = param + param_update; 
 
-    om_old = om; %om_old, 当前双目轴角
-    T_old = T; %T_old, 当前双目平移
+    om_old = om; %om_old, 当前双目之间的旋转（轴角）
+    T_old = T; %T_old, 当前双目之间的平移
     
-    om = param(1:3); %完成更新之后的双目轴角
-    T = param(4:6); %完成更新之后的双目平移
+    om = param(1:3); %完成更新之后的双目之间的旋转（轴角）
+    T = param(4:6); %完成更新之后的双目之间的平移
         
-    %完成更新之后的左目世界坐标系下的外参
+    %完成更新之后的左目相机在世界坐标系下的外参
     for kk = 1:n_ima
         omckk = param(6*(kk-1)+7:6*(kk-1)+7+2);
         Tckk = param(6*(kk-1)+7+3:6*(kk-1)+7+5);
