@@ -30,7 +30,7 @@ title('Disparity Map');
 colormap jet
 colorbar
 
-%基于视差图和投影矩阵reprojectionMatrix，计算出与左目对应的3D点云
+%基于视差图和投影矩阵reprojectionMatrix，计算出与左目校正化图像对应的3D点云
 points3D = reconstructScene(disparityMap, reprojectionMatrix);
 
 %之前系统中的物理单位使用的都是毫米，现在转换成米
@@ -40,6 +40,7 @@ ptCloud = pointCloud(points3D, 'Color', frameLeftRect);
 pcwrite(ptCloud,'result.ply','Encoding','ascii');
 
 % 创建一个点云观察器
-player3D = pcplayer([-3, 3], [-3, 3], [0, 3], 'VerticalAxis', 'y', 'VerticalAxisDir', 'down');
+player3D = pcplayer([-3, 3], [-3, 3], [0, 3], 'VerticalAxis', 'y', ...
+    'VerticalAxisDir', 'down');
 % 查看所生成的3D点云
 view(player3D, ptCloud);
