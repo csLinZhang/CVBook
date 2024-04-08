@@ -199,8 +199,8 @@ static bool readStringList(const string& filename, vector<string>& l)
 //假设已经采集了成对的标定板双目图像，它们的存放路径已经写在了文本文件
 //\chapter-17-stereo\stereoCPP\data\imgpaths.txt中
 //该main函数完成双目相机标定，内参文件和外参文件被分别输出在
-//\chapter - 17 - stereo\stereoCPP\data\intrinsics.yml
-//\chapter - 17 - stereo\stereoCPP\data\extrinsics.yml
+//\chapter-17-stereo\stereoCPP\data\intrinsics.yml
+//\chapter-17-stereo\stereoCPP\data\extrinsics.yml
 int main(int argc, char* argv[])
 {
 	Size boardSize(11, 8); //标定板上的交叉点维度
