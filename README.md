@@ -68,6 +68,8 @@
 
 <img style="float: left;" src="imgs\3d-4.gif" alt="示例图片" width="60%">
 
+<img style="float: left;" src="imgs\ilovetjcs.gif" alt="示例图片" width="60%">
+
 # 授课视频
 [00-本书编写指导思想和内容组织思路介绍](https://www.bilibili.com/video/BV12aVqzAELD/?spm_id_from=333.337.search-card.all.click&vd_source=5cecc28f8471406b6fec5f23dc6619fd)
 
