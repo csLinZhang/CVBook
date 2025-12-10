@@ -198,3 +198,15 @@
 [62-YOLO-（YOLOv3详解）](https://www.bilibili.com/video/BV12ZWSzFEzE/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
 
 [63-YOLO-（YOLOv8，Darknet+YOLOV4实践，Ultralytics+YOLOV11实践）](https://www.bilibili.com/video/BV1UxsEzyEXi/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[64-三维视觉主线介绍 双目视觉系统构建流程](https://www.bilibili.com/video/BV1PgS6BkEPy/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[65-双目视觉系统-（校正化双目系统，双目标定问题建模）](https://www.bilibili.com/video/BV1rfSkB2ERg/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[66-双目视觉系统-（双目系统标定）](https://www.bilibili.com/video/BV1CJSYBpEaM/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[67-双目视觉系统-（校正化双目系统构造）](https://www.bilibili.com/video/BV1pJ2vBJExB/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[68-双目视觉系统-（运行时校正化双目图像对的获取，立体匹配，基于视差的空间点三维坐标计算）](https://www.bilibili.com/video/BV1Ni2fBdEps/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[69-双目视觉系统-（三维点云重建，双目视觉系统构造实践）](https://www.bilibili.com/video/BV16RmxBtEf6/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
