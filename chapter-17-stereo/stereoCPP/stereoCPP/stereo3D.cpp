@@ -6,7 +6,7 @@
 #include "stereo.h"
 
 //存放数据的路径
-static string dataDir = "D:\\Books\\CV-Intro\\code\\chapter-17-stereo\\stereoCPP\\data\\";
+static string dataDir = "C:\\lin\\CVBook-main\\chapter-17-stereo\\stereoCPP\\data\\";
 
 //测试预先录制好的双目视频文件
 int test_video_file() 
@@ -77,7 +77,7 @@ int test_camera()
     Stereo *detector = new Stereo(camera);
     int imageWidth = camera.width;       //单目图像的宽度
     int imageHeight = camera.height;     //单目图像的高度
-    int camera1 = 0;                      //左摄像头ID号(请修改成自己左摄像头ID号)
+    int camera1 = 2;                      //左摄像头ID号(请修改成自己左摄像头ID号)
     int camera2 = 1;                      //右摄像头ID号(请修改成自己右摄像头ID号)
 	cv::VideoCapture capL, capR;
     bool retL = get_video_capture(camera1, capL, imageWidth, imageHeight);

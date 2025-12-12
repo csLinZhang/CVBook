@@ -15,8 +15,7 @@ using namespace std;
 //main函数3：采集双目视频
 
 //存放数据的路径
-static string dataDir = "D:\\Books\\CV-Intro\\code\\chapter-17-stereo\\stereoCPP\\data\\";
-
+static string dataDir = "C:\\lin\\CVBook-main\\chapter-17-stereo\\stereoCPP\\data\\";
 //假设采集的标定板左右目图像分别存放在了path\left和path\right文件夹中
 //该函数得到“path\left”的文件夹下所有类型为“ext”的文件路径的列表，并将它们以及同名的“path\right”路径下的文件路径填入filelist中
 //这样，filelist一定有偶数行，每两行分别是对应的左右目图像的文件路径
@@ -45,7 +44,7 @@ void get_need_file(string path, vector<string>& filelist, string ext)
 //	//打开相机并设置好分辨率，分辨率需要根据读者自己的情况进行调整
 //	int res_Width = 1280;
 //	int res_Height = 720;
-//	VideoCapture inputVideoLeft(0);
+//	VideoCapture inputVideoLeft(2, CAP_DSHOW);
 //	inputVideoLeft.set(cv::CAP_PROP_FRAME_HEIGHT, res_Height);
 //	inputVideoLeft.set(cv::CAP_PROP_FRAME_WIDTH, res_Width);
 //	if (!inputVideoLeft.isOpened())
@@ -58,7 +57,7 @@ void get_need_file(string path, vector<string>& filelist, string ext)
 //		cout << "The left camera is ready" << endl;
 //	}
 //
-//	VideoCapture inputVideoRight(1);
+//	VideoCapture inputVideoRight(1, CAP_DSHOW);
 //	inputVideoRight.set(cv::CAP_PROP_FRAME_HEIGHT, res_Height);
 //	inputVideoRight.set(cv::CAP_PROP_FRAME_WIDTH, res_Width);
 //	if (!inputVideoRight.isOpened())
@@ -71,7 +70,7 @@ void get_need_file(string path, vector<string>& filelist, string ext)
 //		cout << "The right camera is ready" << endl;
 //	}
 //
-//	cv::Size iPatternSize(11, 8); //标定板上交叉点的个数
+//	cv::Size iPatternSize(9, 6); //标定板上交叉点的个数
 //	vector<Point2f> gCornersL, gCornersR; //分别存储检测自左右帧图像上的角点坐标
 //	string imgname;
 //	int frameIndex = 1;
@@ -186,9 +185,10 @@ void get_need_file(string path, vector<string>& filelist, string ext)
 //	//打开相机并设置好分辨率
 //	int res_height = 720;
 //	int res_width = 1280;
-//	VideoCapture inputVideoLeft(0);
+//	VideoCapture inputVideoLeft(2, CAP_DSHOW);
 //	inputVideoLeft.set(cv::CAP_PROP_FRAME_HEIGHT, res_height);
 //	inputVideoLeft.set(cv::CAP_PROP_FRAME_WIDTH, res_width);
+//	//inputVideoLeft.set(CAP_PROP_FOURCC, VideoWriter::fourcc('M', 'J', 'P', 'G'));
 //	if (!inputVideoLeft.isOpened())
 //	{
 //		cout << "Fail to start the left camera." << endl;
@@ -199,9 +199,10 @@ void get_need_file(string path, vector<string>& filelist, string ext)
 //		cout << "The left camera is ready." << endl;
 //	}
 //
-//	VideoCapture inputVideoRight(1);
+//	VideoCapture inputVideoRight(0, CAP_DSHOW);
 //	inputVideoRight.set(cv::CAP_PROP_FRAME_HEIGHT, res_height);
 //	inputVideoRight.set(cv::CAP_PROP_FRAME_WIDTH, res_width);
+//	//inputVideoRight.set(CAP_PROP_FOURCC, VideoWriter::fourcc('M', 'J', 'P', 'G'));
 //	if (!inputVideoRight.isOpened())
 //	{
 //		cout << "Fail to start the right camera." << endl;
@@ -259,7 +260,7 @@ int main()
 	//打开相机并设置好分辨率
 	int res_height = 720;
 	int res_width = 1280;
-	VideoCapture inputVideoLeft(0);
+	VideoCapture inputVideoLeft(2, CAP_DSHOW);
 	inputVideoLeft.set(cv::CAP_PROP_FRAME_HEIGHT, res_height);
 	inputVideoLeft.set(cv::CAP_PROP_FRAME_WIDTH, res_width);
 	if (!inputVideoLeft.isOpened())
@@ -272,7 +273,7 @@ int main()
 		cout << "The left camera is ready." << endl;
 	}
 
-	VideoCapture inputVideoRight(1);
+	VideoCapture inputVideoRight(0, CAP_DSHOW);
 	inputVideoRight.set(cv::CAP_PROP_FRAME_HEIGHT, res_height);
 	inputVideoRight.set(cv::CAP_PROP_FRAME_WIDTH, res_width);
 	if (!inputVideoRight.isOpened())

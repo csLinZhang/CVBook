@@ -8,7 +8,7 @@ using namespace cv;
 using namespace std;
 
 //数据存放目录
-static string dataDirName = "D:\\Books\\CV-Intro\\code\\chapter-17-stereo\\stereoCPP\\data\\";
+static string dataDirName = "C:\\lin\\CVBook-main\\chapter-17-stereo\\stereoCPP\\data\\";
 
 //该函数完成双目系统的标定
 static void
@@ -203,7 +203,7 @@ static bool readStringList(const string& filename, vector<string>& l)
 //\chapter-17-stereo\stereoCPP\data\extrinsics.yml
 int main(int argc, char* argv[])
 {
-	Size boardSize(11, 8); //标定板上的交叉点维度
+	Size boardSize(9, 6); //标定板上的交叉点维度
 	//imagelistfn，存放标定板双目图像文件地址的文本文件
 	string imagelistfn = dataDirName + "imgpaths.txt";
 
