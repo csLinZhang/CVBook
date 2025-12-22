@@ -210,3 +210,7 @@
 [68-双目视觉系统-（运行时校正化双目图像对的获取，立体匹配，基于视差的空间点三维坐标计算）](https://www.bilibili.com/video/BV1Ni2fBdEps/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
 
 [69-双目视觉系统-（三维点云重建，双目视觉系统构造实践）](https://www.bilibili.com/video/BV16RmxBtEf6/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[70-神经辐射场-（基于辐射场的渲染）](https://www.bilibili.com/video/BV1sHqmBPEiS/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
+
+[71-神经辐射场-（NeRF训练，Instant-NGP实践）](https://www.bilibili.com/video/BV1KPqDBVEvp/?vd_source=5cecc28f8471406b6fec5f23dc6619fd)
